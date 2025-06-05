@@ -10396,15 +10396,15 @@ body.light-mode .timeline-left .description {
 
 .overlap-images {
   position: relative;
-  width: 500px;
-  height: 500px;
+  width: 357px;
+  height: 357px;
   margin: auto;
 }
 
 .personal-img {
   position: absolute;
-  width: 270px;
-  height: 270px;
+  width: 200px;
+  height: 200px;
   object-fit: cover;
   border-radius: 50%;
   border: 4px solid #eaeaea;
@@ -10496,7 +10496,10 @@ body.light-mode .timeline-left .description {
   text-decoration: none !important;
 }
 
-
+.about-img {
+  display: flex;
+  justify-content: center;
+}
 
 @-webkit-keyframes loader-rotate {
   100% {
