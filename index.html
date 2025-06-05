@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Poorna Chandra Ramachandra Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+<style>
+/* Light Theme Adjustments */
+body {
+  background-color: #f8f9fa;
+  color: #222;
+  padding-top: 80px; 
+}
+
+.navbar, .about, .projects, .contact, .footer, .ftco-section {
+  background-color: #fff !important;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, li {
+  color: #000;
+}
+
+a {
+  color: #0645AD;
+  text-decoration: none;
+}
+a:hover {
+  color: #0b0080;
+  text-decoration: underline;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: #fff !important;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+} 
+
+.navbar a {
+  color: #000 !important;
+}
+.navbar a:hover {
+  background-color: #f0f0f0;
+  color: #000 !important;
+}
+
+.button, .btn {
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #000;
+  padding: 0.5em 1em;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.button:hover, .btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.btn-primary {
+  background-color: #000;
+  color: #fff;
+}
+.btn-primary:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+input, textarea {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #777;
+}
+input::placeholder {
+  color: #888;
+}
+
+#typing-animation {
+  font-size: 30px;
+  font-weight: bold;
+  color: #000;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 3s steps(20, end) infinite;
+}
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+</style>
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top site-navbar-target" id="ftco-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Poorna Chandra</a>
+        <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="oi oi-menu"></span> Menu
+        </button>
+
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav nav ml-auto">
+            <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+            <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+            <li class="nav-item"><a href="#experience-section" class="nav-link"><span>Experience</span></a></li>
+            <li class="nav-item"><a href="#education-section" class="nav-link"><span>Education</span></a></li>
+            <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+            <li class="nav-item"><a href="#certifications-section" class="nav-link"><span>certifications</span></a></li>
+            <li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skills</span></a></li>
+            <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+<section id="home-section" class="hero">
+<div class="one-forth d-flex align-items-center justify-content-center text-center ftco-animate" style="min-height: 80vh;" data-scrollax=" properties: { translateY: '70%' }">
+  <div class="text text-center">
+    <span class="subheading" style="color: black; font-weight: 500; font-size: 30px;">Hello!</span>
+                  <h1 class="mb-4 mt-3">
+                    <span style="color: black; font-weight: 900; font-size: 50px;">I'm</span> <span style="color: #fcb900; font-weight: 900; font-size: 50px;">Poorna Chandra</span>
+                  </h1>
+
+    <span id="typing-animation"></span>
+
+    <script>
+      const typingAnimationElement = document.getElementById('typing-animation');
+      const typingTexts = [
+        'Data Analysis', 
+        'Data Science',
+        'Business Analytics',
+        'Marketing Analytics',
+        'Product Analytics',
+        'Machine Learning',
+      ];
+
+      function playTypingAnimation(text) {
+        for (let i = 0; i < text.length; i++) {
+          setTimeout(() => {
+            typingAnimationElement.textContent += text[i];
+          }, i * 200);
+        }
+        setTimeout(() => {
+          typingAnimationElement.textContent = '';
+          playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+        }, text.length * 200);
+      }
+
+      playTypingAnimation(typingTexts[0]);
+    </script>
+
+    <br><br>
+    <h2>A Data Science Professional</h2>
+    <p>
+      <a href="https://www.linkedin.com/in/poorna-chandra-ramachandra-1b97791a0" class="btn btn-primary py-3 px-4">LinkedIn</a>
+      <a href="https://drive.google.com/file/d/1UIjgLi52MnyB2WJwe24XTov4ibqqi5vD/view?usp=drive_link" class="btn btn-primary py-3 px-4" style="color: black; border: 2px solid black; background-color: white;">Resume</a>
+    </p>
+  </div>
+</div>
+    </section>
+
+  </body>
+</html>
+
+
+
+<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+  <div class="container">
+
+    <!-- Toggle Buttons -->
+    <div class="row justify-content-center mb-4">
+      <div class="col-md-12 text-center">
+        <p>Click to toggle view</p>
+        <div class="btn-group toggle-buttons">
+          <button class="btn btn-toggle active" onclick="toggleAbout('professional')">Professional</button>
+          <button class="btn btn-toggle" onclick="toggleAbout('personal')">Personal</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROFESSIONAL SECTION -->
+    <div id="about-professional" class="toggle-about-section">
+      <div class="row d-flex align-items-stretch">
+        <!-- Profile Image & Info -->
+        <div class="col-md-6 col-lg-5 d-flex">
+          <div class="img-about img d-flex align-items-stretch">
+            <div class="overlay">
+              <div class="row">
+                <div class="col-sm-6 col-md-12 text-center">
+                  <div class="about-img mb-3">
+                    <img src="images/Profile_pic.png" class="img-fluid rounded-circle b-shadow-a" alt="Profile Image" style="width: 320px; height: 320px; object-fit: cover;">
+                  </div>
+                  <div class="about-info text-left">
+                    <p><span class="title-s">Name: </span> <span>Poorna Chandra Ramachandra</span></p>
+                    <p><span class="title-s">Experience: </span> <span>3+ Years</span></p>
+                    <p><span class="title-s">Location: </span> <span>New York, USA</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- About Me Text -->
+        <div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+          <div class="row justify-content-start pb-3">
+            <div class="col-md-12 heading-section ftco-animate">
+              <h1 class="big">About</h1>
+              <h2 class="mb-4">About Me</h2>
+              <p>Data Science Professional with 3+ years of experience in Marketing, Business and Product analytics, SQL, dashboarding, and automated reporting across tech and wellness industries. Proven ability to create actionable insights through data visualization, KPI tracking and predictive analytics.</p>
+              <ul class="about-info mt-4 px-md-0 px-2">
+                <li class="d-flex"><span>Profile:</span> <span>Data Science &amp; Analytics</span></li>
+                <li class="d-flex"><span>Domain:</span> <span>Health and Wellness, Ecommerce, Gaming &amp; Digital Marketing</span></li>
+                <li class="d-flex"><span>Education:</span> <span>MS in Management Information Systems @University at Buffalo</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- PERSONAL SECTION -->
+<div id="about-personal" class="toggle-about-section" style="display: none;">
+  <div class="row d-flex align-items-stretch">
+    <div class="col-md-6 d-flex justify-content-center align-items-start position-relative">
+      <div class="overlap-images">
+       <div class="overlap-images">
+		<img src="images/IMG_3957.jpeg" class="personal-img top-img" alt="Top Image">
+		<img src="images/WhatsApp Image 2025-05-24 at 21.39.40_afadee6b.jpg" class="personal-img bottom-img-left" alt="Left Image">
+		<img src="images/IMG_5120.jpeg" class="personal-img bottom-img-right" alt="Right Image">
+		</div>
+      </div>
+    </div>
+    <div class="col-md-6 heading-section ftco-animate">
+      <h1 class="big">About</h1>
+      <h2 class="mb-4">Beyond Work</h2>
+      <p>I'm someone who finds joy in both data and adrenaline! I’ve proudly represented my state in badminton and never miss a chance to play cricket with friends. A huge Formula 1 fan, I’m always tuned in on race weekends. I also enjoy wildlife photography, capturing nature’s raw beauty through my lens. Dancing is my go-to escape, and dogs? Absolute soulmates. Life for me is all about balance between passions, play, and purpose.</p>
+      Also a dedicated foodie, and always up for trying new cuisines. Whether it’s a deep conversation or a spontaneous plan, I’m a good company to have around. I believe in living life with curiosity, laughter, and purpose.</p>
+    </div>
+  </div>
+</div>
+
+
+  </div>
+</section>
+
+	
+<section class="ftco-section ftco-no-pb" id="experience-section">
+  <div class="container">
+    <div class="row justify-content-center mb-4">
+      <div class="col-md-10 heading-section text-center ftco-animate">
+        <h2 class="mb-3">Work Experience</h2>
+        <p class="mb-1">Seasoned Data Analyst with 3+ years of experience driving business strategies through data-driven insights.</p>
+        <p class="mb-0">Proven expertise in data science, statistical analysis, machine learning algorithms and Business Analytics.</p>
+      </div>
+    </div>
+
+    <!-- Experience Timeline -->
+    <div class="timeline">
+
+      <!-- Experience Card 1 -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content shadow">
+          <div class="d-flex justify-content-between align-items-center">
+            <h5 class="mb-1 font-weight-bold">Data Consultant</h5>
+            <span class="badge badge-pill badge-dark px-3 py-2">2025 – Present</span>
+          </div>
+          <h6 class="text-primary mb-2">Buffalo Go Green Inc.</h6>
+          <p>Developed scalable MongoDB schema and RESTful APIs to optimize backend data flows for a Farmers Market app. Created Power BI dashboards and implemented a referral feature, increasing user engagement by 15% and cutting manual reporting by 50%.</p>
+          <div class="mt-3">
+            <span class="badge badge-warning mr-2">SQL</span>
+            <span class="badge badge-warning mr-2">Python</span>
+            <span class="badge badge-warning mr-2">Power BI</span>
+            <span class="badge badge-warning mr-2">MongoDB</span>
+			<span class="badge badge-warning mr-2">stakeholder Collaboration</span>
+			<span class="badge badge-warning mr-2">UI-UX</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Experience Card 2 -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content shadow">
+          <div class="d-flex justify-content-between align-items-center">
+            <h5 class="mb-1 font-weight-bold">Business Analyst - Marketing Science</h5>
+            <span class="badge badge-pill badge-dark px-3 py-2">2023 – 2024</span>
+          </div>
+          <h6 class="text-primary mb-2">HealthifyMe Wellness</h6>
+          <p>Automated reporting and built predictive models (XGBoost, MMM) to optimize $1.2M/month ad spend. Designed A/B tests and CRM pipelines for 2M+ users to increase engagement, retention, and adoption through targeted insights.</p>
+          <div class="mt-3">
+            <span class="badge badge-warning mr-2">SQL</span>
+            <span class="badge badge-warning mr-2">Python</span>
+            <span class="badge badge-warning mr-2">Tableau</span>
+			<span class="badge badge-warning mr-2">Digital Marketing</span>
+			<span class="badge badge-warning mr-2">Marketing Mix Modeling</span>
+			<span class="badge badge-warning mr-2">Machine Learning</span>
+            <span class="badge badge-warning">A/B Testing</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Experience Card 3 -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content shadow">
+          <div class="d-flex justify-content-between align-items-center">
+            <h5 class="mb-1 font-weight-bold">Data Analyst - Business</h5>
+            <span class="badge badge-pill badge-dark px-3 py-2">2022 – 2023</span>
+          </div>
+          <h6 class="text-primary mb-2">Gameskraft</h6>
+          <p>Built KPI dashboards and financial models uncovering $15K in revenue opportunities. Designed SQL-driven user segmentation and A/B tests to improve retention, conversion, and marketing efficiency.</p>
+          <div class="mt-3">
+            <span class="badge badge-warning mr-2">SQL</span>
+            <span class="badge badge-warning mr-2">Python</span>
+            <span class="badge badge-warning mr-2">Tableau</span>
+            <span class="badge badge-warning mr-2">Machine Learning</span>
+			<span class="badge badge-warning mr-2">Business Strategy</span>
+			<span class="badge badge-warning mr-2">Reporting</span>
+            <span class="badge badge-warning">A/B Testing</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+		<br>
+		<br>
+
+			<section class="ftco-section ftco-no-pb" id="education-section">
+			<div class="container">
+				<div class="row justify-content-center mb-2 pb-1">
+				<div class="col-md-10 heading-section text-center ftco-animate">
+					<h2 class="mb-2">Education</h2>
+				</div>
+				</div>
+				
+				<div class="underline" style="margin-top: 0;"></div>
+		 <br>
+
+				<!-- Education Card 1 -->
+				<div class="card shadow-sm p-4 mb-4 edu-card">
+				<div class="row align-items-center">
+					<div class="col-md-2 text-center">
+					<img src="images/ub_logo.png" alt="UB Logo" style="width: 100px; height: 100px; border-radius: 50%;">
+					</div>
+					<div class="col-md-10">
+					<h5 class="font-weight-bold mb3">Master of Science in Management Information Systems (STEM)</h5>
+					<h6 style="color: #f59e0b; font-weight: 500;" class="mb-1">University at Buffalo, The State University of New York</h6>
+					<span class="text-muted">2024 – 2025</span>
+					</div>
+				</div>
+				</div>
+
+				<!-- Education Card 2 -->
+				<div class="card shadow-sm p-4 mb-4 edu-card">
+				<div class="row align-items-center">
+					<div class="col-md-2 text-center">
+					<img src="images/pes_logo.jpeg" alt="PES Logo" style="width: 100px; height: 100px; border-radius: 50%;">
+					</div>
+					<div class="col-md-10">
+					<h5 class="font-weight-bold mb3">Bachelor of Engineering in Mechanical Engineering</h5>
+					<h6 style="color: #f59e0b; font-weight: 500;" class="mb-1">P.E.S College of Engineering</h6>
+					<span class="text-muted">2018 – 2022</span>
+					</div>
+				</div>
+				</div>
+
+
+			<!-- Download CV Button -->
+			<div class="row justify-content-center mt-5">
+			<div class="col-md-6 text-center ftco-animate">
+				<p><a href="https://drive.google.com/file/d/1UIjgLi52MnyB2WJwe24XTov4ibqqi5vD/view?usp=drive_link" class="btn btn-primary py-4 px-5">Download CV</a></p>
+			</div>
+			</div>
+		</div>
+		</section>
+   
+
+<section class="ftco-section" id="project-section">
+  <div class="container">
+    <div class="row justify-content-center mb-3 pb-3">
+      <div class="col-md-7 heading-section text-center ftco-animate">
+        <h1 class="big big-2">Projects</h1>
+        <h2 class="mb-2">Projects</h2>
+        <p>Below are the sample Analytics and Data Science projects.</p>
+      </div>
+    </div>
+
+<div class="row mb-5">
+
+    <!-- Project 1 -->
+      <div class="col-md-4 d-flex ftco-animate">
+        <a href="https://github.com/Poornachandra108/Churn-Classifier" target="_blank" class="project-link">
+        <div class="project-card" style="background-color: #ffffff;">
+          <img src="images/Churn_predictor.png" alt="Churn Predictor" class="img-fluid rounded mb-3">
+          <h5 class="heading font-weight-bold">Churn Predictor</h5>
+          <p style="color: #6c757d">ANN-based churn prediction model using TensorFlow/Keras with 85.95% accuracy, enabling proactive customer retention strategies.</p>
+          <div>
+            <span class="badge badge-warning text-dark mr-1">DeepLearning</span>
+            <span class="badge badge-light mr-1">Python</span>
+            <span class="badge badge-info">TensorFlow</span>
+            <span class="badge badge-light">Keras</span>
+          </div>
+        </div>
+        </a>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="col-md-4 d-flex ftco-animate">
+        <a href="https://github.com/Poornachandra108/SmartATS-Reviewer" target="_blank" class="project-link">
+        <div class="project-card" style="background-color: #ffffff;">
+          <img src="images/Smart_ats.png" alt="SmartATS Reviewer - Gen AI" class="img-fluid rounded mb-3">
+          <h5 class="heading font-weight-bold">SmartATS Reviewer</h5>
+          <p style="color: #6c757d">AI-powered Streamlit app using Google Gemini Pro to analyze resumes vs job descriptions. Returns keyword gaps, feedback and match score.</p>
+          <div>
+            <span class="badge badge-warning text-dark mr-1">Gen AI</span>
+            <span class="badge badge-light mr-1">Python</span>
+            <span class="badge badge-success">Gemini Pro API</span>
+            <span class="badge badge-info">Streamlit</span>
+          </div>
+        </div>
+        </a>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="col-md-4 d-flex ftco-animate">
+        <a href="https://github.com/Poornachandra108/Reservation-Radar" target="_blank" class="project-link">
+        <div class="project-card" style="background-color: #ffffff;">
+          <img src="images/Reservation.png" alt="Reservation Radar" class="img-fluid rounded mb-3">
+          <h5 class="heading font-weight-bold">Reservation Radar</h5>
+          <p style="color: #6c757d">ML pipeline to predict hotel booking cancellations with 89% accuracy (Random Forest), reducing revenue loss and improving guest retention.</p>
+          <div>
+            <span class="badge badge-warning text-dark mr-1">Machine Learning</span>
+            <span class="badge badge-light mr-1">Python</span>
+            <span class="badge badge-success">SciKit-Learn</span>
+          </div>
+        </div>
+        </a>
+      </div>
+  </div>
+
+<!-- Row 2 -->
+  <div class="row">
+    <!-- Project 4 -->
+    <div class="col-md-4 d-flex ftco-animate">
+        <a href="https://github.com/Poornachandra108/Uber-Ride-Data-Analysis" target="_blank" class="project-link">
+          <div class="project-card" style="background-color: #ffffff;">
+          <img src="images/uber_eda.png" alt="Uber EDA" class="img-fluid rounded mb-3">
+          <h5 class="heading font-weight-bold">Uber Ride EDA and Visualization</h5>
+          <p style="color: #6c757d;">
+            Performed exploratory data analysis on Uber ride data to understand hourly trends and city-level ride volumes using Jupyter Notebook and matplotlib.
+          </p>
+          <div>
+            <span class="badge badge-warning text-dark mr-1">Data Analysis</span>
+            <span class="badge badge-light mr-1">Python</span>
+            <span class="badge badge-success">Data Viz</span>
+          </div>
+        </div>
+      </a>
+    </div>
+
+      <!-- Project 5 -->
+      <div class="col-md-4 d-flex ftco-animate">
+        <a href="https://github.com/Poornachandra108/The-Guac-Shop-ETL-Project" target="_blank" class="project-link">
+          <div class="project-card" style="background-color: #ffffff;">
+            <img src="images/ETL.png" alt="ETL & Data Warehousing Project" class="img-fluid rounded mb-3">
+            <h5 class="heading font-weight-bold">ETL Automation</h5>
+            <p style="color: #6c757d;">
+              Built an end-to-end ETL pipeline using Apache Hop and Oracle Cloud to load sales data into a fact-dimension model for Tableau dashboards.
+            </p>
+            <div>
+              <span class="badge badge-warning text-dark mr-1">Data Warehousing</span>
+              <span class="badge badge-light mr-1">SQL</span>
+              <span class="badge badge-dark">Oracle Cloud</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    
+    </div>
+  </div>
+</section>
+
+
+
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>More projects on<span> Github  </span> </h2>
+						<br>
+						<p><a href="https://github.com/Poornachandra108" class="btn btn-primary py-3 px-5">GitHub</a></p>
+					</div>
+				</div>
+
+
+
+  
+<section class="ftco-section" id="certifications-section">
+  <div class="container">
+    <div class="row justify-content-center mb-3 pb-3">
+      <div class="col-md-7 heading-section text-center ftco-animate">
+        <h1 class="big big-2">Certifications</h1>
+        <h2 class="mb-2">Certifications</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- Cert Card 1 -->
+      <div class="col-md-6 col-lg-4 mb-4">
+        <a href="https://www.credly.com/badges/57aae7a8-b21a-4888-a430-2ebb5683e54e" target="_blank" class="cert-link">
+          <div class="cert-card p-4">
+            <img src="images/ibm_logo.jpeg" alt="IBM" class="cert-icon mb-3">
+            <h5 class="font-weight-bold mb-1">Machine Learning with Python</h5>
+            <p class="cert-org mb-0">IBM</p>
+            <p class="cert-type">coursera</p>
+            <span class="cert-year">2025</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Cert Card 2 -->
+      <div class="col-md-6 col-lg-4 mb-4">
+        <a href="https://www.credly.com/badges/a6ce210a-d70e-4574-8e23-90c8285f01cd/public_url" target="_blank" class="cert-link">
+          <div class="cert-card p-4">
+            <img src="images/amazon_web_services_logo.jpeg" alt="AWS" class="cert-icon mb-3">
+            <h5 class="font-weight-bold mb-1">AWS Academy Cloud Security Foundations</h5>
+            <p class="cert-org mb-0">AWS</p>
+            <p class="cert-type">AWS Training and Certification</p>
+            <span class="cert-year">2025</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Cert Card 3 -->
+      <div class="col-md-6 col-lg-4 mb-4">
+        <a href="https://achieve.snowflake.com/83467291-0044-4855-91bf-befa0ffdaf98#acc.9zGhJ3kD" target="_blank" class="cert-link">
+          <div class="cert-card p-4">
+            <img src="images/snowflake_computing_logo.jpeg" alt="Snowflake" class="cert-icon mb-3">
+            <h5 class="font-weight-bold mb-1">Snowflake Data Warehousing Workshop</h5>
+            <p class="cert-org mb-0">Snowflake</p>
+            <p class="cert-type">Workshop</p>
+            <span class="cert-year">2024</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Cert Card 4 -->
+      <div class="col-md-6 col-lg-4 mb-4">
+        <a href="https://www.credly.com/badges/0ab187bc-c0dc-40b5-9bd1-bbc33492272f/public_url" target="_blank" class="cert-link">
+          <div class="cert-card p-4">
+            <img src="images/Google.jpeg" alt="Snowflake" class="cert-icon mb-3">
+            <h5 class="font-weight-bold mb-1">Google Project Management Professional Certificate</h5>
+            <p class="cert-org mb-0">Google</p>
+            <p class="cert-type">Professional Certificate</p>
+            <span class="cert-year">2025</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Cert Card 5 -->
+      <div class="col-md-6 col-lg-4 mb-4">
+        <a href="https://www.credly.com/badges/641eb6c3-5460-4f05-8b37-f2c08e467d52/public_url" target="_blank" class="cert-link">
+          <div class="cert-card p-4">
+            <img src="images/tableau_software_logo.jpeg" alt="Tableau" class="cert-icon mb-3">
+            <h5 class="font-weight-bold mb-1">Tableau Specialist</h5>
+            <p class="cert-org mb-0">Tableau</p>
+            <p class="cert-type">Professional Certificate</p>
+            <span class="cert-year">2024</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Cert Card 6 -->
+      <div class="col-md-6 col-lg-4 mb-4">
+        <a href="https://drive.google.com/file/d/1bmvRKB2D4qzGca4BWmaV2NpnvsxecXW8/view?usp=sharing" target="_blank" class="cert-link">
+          <div class="cert-card p-4">
+            <img src="images/universityatbuffalo_logo.jpeg" alt="Hackathon" class="cert-icon mb-3">
+            <h5 class="font-weight-bold mb-1">UB AI Hackathon</h5>
+            <p class="cert-org mb-0">UBuffalo CoLab</p>
+            <p class="cert-type">Hackathon</p>
+            <span class="cert-year">2024</span>
+          </div>
+        </a>
+      </div>  
+
+    </div>
+  </div>
+
+				<section class="ftco-section" id="skills-section">
+					<div class="container">
+						<div class="row justify-content-center mb-3 pb-3">
+						<div class="col-md-8 heading-section text-center ftco-animate">
+							<h2 class="mb-1">Skills</h2>
+							<p>My technical and Domain expertise</p>
+						</div>
+					</div>
+
+				<div class="row">
+
+				<!-- Category 1 -->
+				<div class="col-md-6 mb-4">
+					<div class="skill-card">
+					<h4>🧑‍💻 Languages & Project Management</h4>
+					<div class="skills-tags">
+						<span>Python</span><span>R</span><span>SQL</span><span>Git</span><span>Excel</span>
+						<span>PowerPoint</span><span>JIRA</span><span>Confluence</span>
+					</div>
+					</div>
+				</div>
+
+				<!-- Category 2 -->
+				<div class="col-md-6 mb-4">
+					<div class="skill-card">
+					<h4>📊 Data Analysis, Visualization & BI</h4>
+					<div class="skills-tags">
+						<span>Pandas</span><span>NumPy</span><span>SciPy</span><span>Matplotlib</span><span>Seaborn</span>
+						<span>Tableau</span><span>Power BI</span><span>Adobe Analytics</span><span>MS Excel</span>
+					</div>
+					</div>
+				</div>
+
+				<!-- Category 3 -->
+				<div class="col-md-6 mb-4">
+					<div class="skill-card">
+					<h4>🧠 Machine Learning & Statistics</h4>
+					<div class="skills-tags">
+						<span>Scikit-learn</span><span>TensorFlow</span><span>Keras</span><span>NLP</span><span>Neural Networks</span>
+						<span>Time Series Forecasting</span><span>A/B Testing</span><span>Hypothesis Testing</span><span>Statistics</span><span>Marketing Mix Modeling</span>
+					</div>
+					</div>
+				</div>
+
+				<!-- Category 4 -->
+				<div class="col-md-6 mb-4">
+					<div class="skill-card">
+					<h4>☁️ Cloud Platforms & Optimization</h4>
+					<div class="skills-tags">
+						<span>Snowflake</span><span>Redshift</span><span>BigQuery</span><span>Databricks</span><span>AWS</span>
+						<span>Spark</span><span>Optimization</span><span>Automation</span><span>Pricing Strategy</span>
+					</div>
+					</div>
+				</div>
+
+				<!-- Category 5 -->
+				<div class="col-md-6 mb-4">
+					<div class="skill-card">
+					<h4>🧩 Analytical Strategy & Problem Solving</h4>
+					<div class="skills-tags">
+						<span>Data Mining</span><span>Web Scraping</span><span>Requirement Gathering</span><span>Business Analytics</span><span>Marketing Analytics</span><span>CRM</span>
+					</div>
+					</div>
+				</div>
+
+				<!-- Category 6 -->
+				<div class="col-md-6 mb-4">
+					<div class="skill-card">
+					<h4>🌐 Domain Expertise</h4>
+					<div class="skills-tags">
+						<span>Gaming Analytics</span><span>Health and Wellness</span><span>E-Commerce</span><span>Marketing</span><span>Healthcare</span>
+					</div>
+					</div>
+				</div>
+
+				</div>
+			</div>
+
+ <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+  <div class="container">
+    <div class="row justify-content-center mb-5 pb-3">
+      <div class="col-md-7 heading-section text-center ftco-animate">
+        <h1 class="big big-2">Contact</h1>
+        <h2 class="mb-4">Contact Me</h2>
+        <p>Below are the details to reach out to me!</p>
+      </div>
+    </div>
+
+    <div class="row d-flex contact-info mb-5">
+      <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+        <div class="box-light p-4 text-center">
+          <div class="icon d-flex align-items-center justify-content-center">
+            <span class="icon-map-signs"></span>
+          </div>
+          <h3 class="mb-4">Location</h3>
+          <p>New York, USA</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+        <div class="box-light p-4 text-center">
+          <div class="icon d-flex align-items-center justify-content-center">
+            <span class="icon-phone2"></span>
+          </div>
+          <h3 class="mb-4">Contact Number</h3>
+          <p><a href="tel://0101010101">+1(716) 750-3236</a></p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+        <div class="box-light p-4 text-center">
+          <div class="icon d-flex align-items-center justify-content-center">
+            <span class="icon-paper-plane"></span>
+          </div>
+          <h3 class="mb-4">Email Address</h3>
+          <p><a href="mailto:poornachandra10831@gmail.com">poornachandra10831@gmail.com</a></p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+        <div class="box-light p-4 text-center">
+          <div class="icon d-flex align-items-center justify-content-center">
+            <span class="icon-globe"></span>
+          </div>
+          <h3 class="mb-4">Download Resume</h3>
+          <p><a href="https://drive.google.com/file/d/1UIjgLi52MnyB2WJwe24XTov4ibqqi5vD/view?usp=drive_link">Click Here</a></p>
+        </div>
+      </div>
+    </div>
+
+<!-- Send Message Section using Google Form -->
+<form action="https://docs.google.com/forms/d/e/1FAIpQLSfJERbVRv0kfD1myXK46c7y3BJFivp9giREKj8ZTrTXa2Miaw/formResponse" method="POST" target="_blank">
+  <div class="form-group mb-3">
+    <label for="name">Name</label>
+    <input type="text" name="entry.439183751" class="form-control" placeholder="Your name" required />
+  </div>
+  <div class="form-group mb-3">
+    <label for="email">Email</label>
+    <input type="email" name="entry.1054172285" class="form-control" placeholder="Your email" required />
+  </div>
+  <div class="form-group mb-4">
+    <label for="message">Message</label>
+    <textarea name="entry.84352761" rows="4" class="form-control" placeholder="Your message" required></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary w-100">
+    <i class="icon-paper-plane mr-2"></i>Send Message
+  </button>
+</form>
+
+
+</div>
+</section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+  
+
+<script>
+  function toggleAbout(view) {
+    document.getElementById("about-professional").style.display = view === 'professional' ? 'block' : 'none';
+    document.getElementById("about-personal").style.display = view === 'personal' ? 'block' : 'none';
+
+    // Toggle button active class
+    const buttons = document.querySelectorAll(".btn-toggle");
+    buttons.forEach(btn => btn.classList.remove("active"));
+    document.querySelector(`.btn-toggle[onclick="toggleAbout('${view}')"]`).classList.add("active");
+  }
+</script>
+
+	
+
+  </body>
+</html>
