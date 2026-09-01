@@ -1,5 +1,5 @@
 /* ============================================================
-   Poorna Chandra Ramachandra — portfolio interactions
+   Poorna Chandra Ramachandra, portfolio interactions
    Vanilla JS, no dependencies.
    ============================================================ */
 (function () {
@@ -12,7 +12,7 @@
   /* ---------- theme ---------- */
   (function theme() {
     var root = document.documentElement;
-    // Dark is the signature look — only an explicit visitor choice overrides it.
+    // Dark is the signature look; only an explicit visitor choice overrides it.
     var saved = null;
     try { saved = localStorage.getItem('pc-theme'); } catch (e) {}
     root.setAttribute('data-theme', saved === 'light' ? 'light' : 'dark');
@@ -260,19 +260,19 @@
       platform: {
         title: 'Platform-reported credit',
         desc: 'Every platform grades its own homework. Totals overstate reality.',
-        insight: 'Meta and Google both claim the same conversion. Summed across platforms, these channels &ldquo;delivered&rdquo; <b>more revenue than the business actually booked</b> — which is the first sign you are budgeting off self-reported numbers.',
+        insight: 'Meta and Google both claim the same conversion. Summed across platforms, these channels &ldquo;delivered&rdquo; <b>more revenue than the business actually booked</b>. That is the first sign you are budgeting off self-reported numbers.',
         data: [92, 85, 61, 74, 58, 47]
       },
       mmm: {
         title: 'Media mix model contribution',
         desc: 'Regression on spend, sales, seasonality and promotions. Credit shrinks where channels overlap.',
-        insight: 'Controlling for seasonality and promotions strips <b>27% of claimed credit</b>. Display and Email fall hardest — most of what they were credited with was demand that already existed.',
+        insight: 'Controlling for seasonality and promotions strips <b>27% of claimed credit</b>. Display and Email fall hardest, since most of what they were credited with was demand that already existed.',
         data: [63, 71, 44, 66, 39, 22]
       },
       geo: {
         title: 'Geo-holdout verified lift',
         desc: 'Matched-market holdouts measure what actually would not have happened. This is the number to budget against.',
-        insight: 'Meta&rsquo;s credited contribution halves once a matched-market holdout is run — <b>~2&times; over-attribution</b>. Search holds up best. <b>This is the column the next dollar should be allocated from.</b>',
+        insight: 'Meta&rsquo;s credited contribution halves once a matched-market holdout is run, roughly <b>2&times; over-attribution</b>. Search holds up best. <b>This is the column the next dollar should be allocated from.</b>',
         data: [46, 64, 33, 58, 31, 12]
       }
     };
