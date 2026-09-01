@@ -142,12 +142,12 @@
     var el = $('#role');
     if (!el) return;
     var items = [
-      'Marketing Mix Modeling',
-      'Geo-Experimentation',
-      'Incrementality Measurement',
-      'Causal Inference',
-      'Multi-Touch Attribution',
-      'Media Budget Allocation'
+      'Marketing Analytics',
+      'Campaign & Creative Performance',
+      'Channel Efficiency',
+      'Media Mix Modelling',
+      'Incrementality Testing',
+      'Lifecycle & Retention'
     ];
     if (reduce) { el.innerHTML = '<b>' + items.join('</b> &middot; <b>') + '</b>'; return; }
 
@@ -264,7 +264,7 @@
         data: [92, 85, 61, 74, 58, 47]
       },
       mmm: {
-        title: 'MMM-validated contribution',
+        title: 'Media mix model contribution',
         desc: 'Regression on spend, sales, seasonality and promotions. Credit shrinks where channels overlap.',
         insight: 'Controlling for seasonality and promotions strips <b>27% of claimed credit</b>. Display and Email fall hardest — most of what they were credited with was demand that already existed.',
         data: [63, 71, 44, 66, 39, 22]
@@ -272,7 +272,7 @@
       geo: {
         title: 'Geo-holdout verified lift',
         desc: 'Matched-market holdouts measure what actually would not have happened. This is the number to budget against.',
-        insight: 'Meta&rsquo;s true contribution halves under a matched-market holdout — <b>~2&times; over-attribution</b>, the same gap I measured at 4% true lift against 8% platform-reported. Search holds up best. <b>This is the column the next dollar should be allocated from.</b>',
+        insight: 'Meta&rsquo;s credited contribution halves once a matched-market holdout is run — <b>~2&times; over-attribution</b>. Search holds up best. <b>This is the column the next dollar should be allocated from.</b>',
         data: [46, 64, 33, 58, 31, 12]
       }
     };
